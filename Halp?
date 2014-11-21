@@ -1,0 +1,47 @@
+package oppgaver;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class TaskOneA {
+
+	public static void main(String[] args) {
+		System.out.print("Oppgi arrayens lengde: ");
+		Scanner input = new Scanner(System.in);
+		int array = input.nextInt();
+		print(fyll(array));
+
+	}
+
+	// Oppgave A
+	public static int[] fyll(int x) {
+		int[] data = new int[x];
+		for (int i = 0; i < x; i++) {
+			data[i] = (int) (Math.random() * x);
+		}
+		return data;
+	}
+
+	// Oppgave B
+	public static void print(int[] data) {
+
+		System.out.println("Arrayens lengde:");
+		for (int number : data) {
+			System.out.printf("%4d", number);
+		}
+
+	}
+
+	// Oppgave C
+	public static int sjekk(int[] data, int input) {
+		int counter = 0;
+		for (int number : data) {
+			if (number == input) {
+				counter++;
+
+			}
+		}
+		return counter;
+	}
+
+}
