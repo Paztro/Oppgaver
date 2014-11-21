@@ -6,10 +6,15 @@ import java.util.Scanner;
 public class TaskOneA {
 
 	public static void main(String[] args) {
+	//	Sett in en int her som er = 0;
+	//	Sett inn Scanner her
+	
 		System.out.print("Oppgi arrayens lengde: ");
-		Scanner input = new Scanner(System.in);
-		int array = input.nextInt();
-		print(fyll(array));
+		
+	// Her setter du inten du satt oppe = input.nextIn();
+	//print (Arrayen inneholder:)
+	// int arrayen = fyll(tallet brukern skrev inn)
+	// print(arryen over)
 
 	}
 
