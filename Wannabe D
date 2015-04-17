@@ -24,21 +24,24 @@ public class Test {
 	}
 
 	// Returns array of given size composed of consecutive odds
-	public static int[] fyll(int x) {
-		int[] data = new int[x];
-		for (int i = 0; i < data.length; i++) {
-			Random number = new Random();
-			int randnumb = number.nextInt(10) + 1;
-			data[i] = i;
-			System.out.print(randnumb + " ");
+	public static int[] fyll(int x) {  // riktig
+		int[] data = new int[x];  // riktig
+		for (int i = 0; i < data.length; i++) { 	// i < x; i++
+			Random number = new Random();		// riktig
+			int randnumb = number.nextInt(10) + 1; // Skal være random tall. fra det brukeren skrive inn. 
+							       // Skriver personen inn 10, så skal det være 10 tall i størrelse 0-10
+							       // data[i] = rand.nextInt(tall + 1);
+			data[i] = i;		// Hva gjør denne?
+			System.out.print(randnumb + " "); // Ikke noe print på på A
 		}
 		return data;
 	}
 
 	// adds one to each array element
-	public static void print(int[] data) {
-		for (int i = 0; i < data.length; i++) {
-			data[i]++;
+	public static void print(int[] data) {		// riktig
+		for (int i = 0; i < data.length; i++) {  	// Her skal du bruke forkorta version av for loop.
+								// forelesning 10, side 35
+			data[i]++;		// Print her
 		}
 
 	}
@@ -49,7 +52,7 @@ public class Test {
 		System.out.println();
 
 		for (int i = 0; i < 3; i++) {
-			System.out.print("Oppgi et tall (0 - 10): ");
+			System.out.print("Oppgi et tall (0 - 10): ");  // Hvorfor dette på sjekk? Dette skal ikke inn før D
 			int number = input1.nextInt();
 
 		}
